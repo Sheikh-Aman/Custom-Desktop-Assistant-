@@ -33,7 +33,7 @@ if __name__ == '__main__':
         print("Listening...")
         query = takeCommand()
         
- #conversations with assistance
+
  
         actions = {
 
@@ -45,7 +45,7 @@ if __name__ == '__main__':
             "I am fine": lambda: say("that's great, sir"),
             "what is your name": lambda: say("I am Ginger, your assistance sir"),
 
- #websites
+ 
  
             #websites
             "open google": lambda: webbrowser.open("https://www.google.com"),
