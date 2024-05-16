@@ -6,13 +6,13 @@ import webbrowser
 import datetime
 
 
-# assistant output function
+
 
 def say(text):
     os.system(f'say "{text}"')
 
     
-# user input function
+
 
 def takeCommand():
     r = sr.Recognizer()
@@ -32,7 +32,9 @@ if __name__ == '__main__':
     while True:
         print("Listening...")
         query = takeCommand()
-
+        
+ #conversations with assistance
+ 
         actions = {
 
             #conversations with assistance
@@ -43,6 +45,8 @@ if __name__ == '__main__':
             "I am fine": lambda: say("that's great, sir"),
             "what is your name": lambda: say("I am Ginger, your assistance sir"),
 
+ #websites
+ 
             #websites
             "open google": lambda: webbrowser.open("https://www.google.com"),
             "open youtube": lambda: webbrowser.open("https://www.youtube.com"),
